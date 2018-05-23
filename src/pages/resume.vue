@@ -1,6 +1,6 @@
 <template>
 <div class="page-wrapper">
-  <div class="page" :id="$route.params.resumeid">
+  <div class="page elevation-4" :id="$route.params.resumeid">
     <div class="page-inner">
       <component :is="$route.params.resumeid"></component>
     </div>
@@ -23,7 +23,6 @@ export default Vue.component('resume', {
 }
 .page-wrapper {
   overflow-x: hidden;
-  background: #CCCCCC;
   margin: 0;
   padding: 0;
   -webkit-print-color-adjust: exact;
@@ -43,5 +42,6 @@ export default Vue.component('resume', {
   display: block;
   page-break-after: auto;
   overflow: hidden;
+  margin: 1em auto;
 }
 </style>
