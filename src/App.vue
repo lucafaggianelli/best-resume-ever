@@ -1,6 +1,23 @@
 <template>
 <div id="app">
-  <router-view></router-view>
+  <v-app>
+    <v-toolbar app dense>
+      <v-toolbar-title>
+        <router-link :to="{ name: 'home' }">CVBuilder</router-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat>Link One</v-btn>
+        <v-btn flat>Link Two</v-btn>
+        <v-btn flat>Link Three</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    <v-content>
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </v-content>
+  </v-app>
 </div>
 </template>
 
@@ -23,6 +40,5 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background: #CCCCCC;
 }
 </style>
