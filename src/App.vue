@@ -1,9 +1,11 @@
 <template>
 <div id="app">
   <v-app>
-    <v-toolbar app dense>
+    <v-toolbar app dense color="teal" dark>
       <v-toolbar-title>
-        <router-link :to="{ name: 'home' }">CVBuilder</router-link>
+        <v-btn flat exact
+          :to="{ name: 'home' }">CVBuilder
+        </v-btn>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
